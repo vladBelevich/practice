@@ -1,0 +1,32 @@
+@media(min-width:1120px){
+	.header {
+		display: none;
+	}
+	.main{
+		margin-top: 0px;
+	}
+	.main__container{
+		margin-top: 42px;
+	}
+	.main__title{
+		padding-top: 0;
+	}
+	.sliderMenu {
+		flex-wrap: wrap;
+	}
+	.sliderMenu__button{
+		padding: 8px 22px 7px 23px;
+	}
+	.title{
+		padding: 0;
+	}
+	.title__repair{
+		display: block;
+	}
+	.title__repair::after{
+		display: block;
+	}
+	.title__checkstatus{
+		display: block;
+	}
+	}

@@ -1,0 +1,32 @@
+@media (min-width:768px){
+	.brands__title{
+		padding: 16px 24px;
+	}
+	.swiper-pagination{
+		display: none;
+	}
+	.brands__readMore {
+		display: block;
+	}
+	.brands__list {
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: flex-start;
+		column-gap: 24px;
+		row-gap: 16px;
+		padding: 0 24px 0 24px;
+	}
+	.brands__item{
+		width: 31%;
+	}
+	.swiper-wrapper{
+		box-sizing: border-box;
+	}
+	.brands__light-shadow{
+		display: none;
+	}
+	.brands__list.closed{
+		height: 160px;
+		overflow: hidden;
+	}
+}

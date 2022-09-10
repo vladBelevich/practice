@@ -7,43 +7,97 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link href="fonts/font.css" rel="stylesheet">
+	<link href="css/swiper.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media369px.css" rel="stylesheet">
+	<link href="css/media768px.css" rel="stylesheet">
+	<link href="css/media1120px.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="wrapper">
-		<div class="menu">
-			<div class="menu__header">
-				<div class="menu__burger"><span></span></div>
-				<a href="#" class="menu__logo logo"><img src="img/icons/logo.svg" alt="Лого"></a></li>
-				<a href="#" class="menu__search search"><img src="img/icons/search.svg" alt="Лого"></a></li>
+		<div class="brands">
+			<div class="brands__light-shadow"></div>
+			<div class="brands__title">
+				<h1 class="brands__title">Ремонт техники различных брендов</h1>
 			</div>
-			<div class="menu__list">
-				<a class="menu__item" href="#">Ремонт техники</a></button>
-				<a class="menu__item" href="#">Услуги и сервисы</a></button>
-				<a class="menu__item" href="#">Корпоративным клиентам</a></button>
-				<a class="menu__item" href="#">Продавцам техники</a></button>
-				<a class="menu__item" href="#">Партнерам</a></button>
-				<a class="menu__item" href="#">Производителям</a></button>
-				<a class="menu__item" href="#">Наши сервисные центры</a></button>
-				<a class="menu__item" href="#">Контакты</a></button>
-			</div>
-			<div class="menu__contact">
-				<div class="menu__widget">
-					<button href="#" class="menu__call call"><img src="img/icons/phone.svg" alt="Звонок"></button>
-					<button href="#" class="menu__message message"><img src="img/icons/message.svg" alt="Чат"></button>
-					<button href="#" class="menu__profile profile"><img src="img/icons/profile.svg" alt="Профиль"></button>
+			<article class="brands-swiper swiper" data-mobile="false">
+				<div class="brands__list swiper-wrapper closed">
+					<div class="brands__item swiper-slide">
+						<img src="img/lenovo_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/Samsung_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/Apple_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/ViewSonic_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/Bosch__logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/HP_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/Acer_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/Sony_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/lenovo_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/Samsung_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
+					<div class="brands__item swiper-slide">
+						<img src="img/Apple_logo.png" alt="Леново">
+						<button class="brands__button">
+							<img src="img/icons/button.svg" alt="Далее">
+						</button>
+					</div>
 				</div>
-				<a class="menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-				<a class="menu__number" href="tel:88008908900">8 800 890 8900</a>
-			</div>
-			<div class="menu__language">
-				<button class="menu__ru language">ru</button>
-				<button class="menu__eng language">eng</button>
-				<button class="menu__ch language">ch</button>
-			</div>
+			</article>
+			<div class="swiper-pagination"></div>
+			<button class="brands__readMore">Показать все</button>
 		</div>
 	</div>
+	<script src="/js/swiper.min.js"></script>
+	<script src="/js/slider.js"></script>
+	<script src="/js/readMore.js"></script>
 </body>
 
 </html>

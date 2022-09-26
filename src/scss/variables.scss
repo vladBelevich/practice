@@ -1,0 +1,55 @@
+$icon-bg: #ff3e79;
+$icon-color: #ffffff;
+$hl-color: #41f6d7;
+$title-text-color: #7e7e82;
+$text-color: #1b1c21;
+$block-bg: #ffffff;
+$body-bg: #f2f2f2;
+$titles-fz: 1.6rem;
+$main-fz: 1.4rem;
+$slider-color: #f2f2f2;
+$border-color: #eaeaea;
+
+%icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: $icon-bg;
+}
+%transition {
+	transition: 0.5s ease;
+	opacity: 0.5;
+}
+%button {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: 1px solid $icon-bg;
+	border-radius: 50%;
+	&:hover {
+		@extend %transition;
+	}
+	img {
+		position: absolute;
+		top: 13px;
+		left: 16px;
+	}
+}
+%send-button {
+	height: 32px;
+	border-radius: 16px;
+	background-color: $icon-bg;
+	color: $icon-color;
+	font-size: 1.2rem;
+	line-height: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+	&:hover {
+		@extend %transition;
+	}
+	span {
+		display: inline-block;
+		content: url(../img/icons/icon_white.svg);
+		color: white;
+	}
+}

@@ -1,0 +1,236 @@
+@import "variables.scss";
+body {
+	font-family: "TT Lakes";
+	background-color: #f2f2f2;
+}
+
+.menu {
+	width: 320px;
+	position: fixed;
+	top: 0;
+	left: -320px;
+	background-color: $block-bg;
+	height: 100vh;
+	overflow: auto;
+	z-index: 2;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	.menu__container {
+		height: 100%;
+		width: 320px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: 10;
+		background-color: $block-bg;
+		padding: 0 24px;
+		.menu__header {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding-top: 24px;
+			margin-bottom: 47px;
+			.menu__burger {
+				display: block;
+				position: relative;
+				@extend %icon;
+				align-self: center;
+				margin-right: 16px;
+				&:hover {
+					@extend %transition;
+				}
+				&::after,
+				&::before {
+					content: "";
+					background-color: #ffffff;
+					position: absolute;
+					width: 51%;
+					height: 2px;
+					left: 10px;
+				}
+				&::before {
+					top: 19px;
+					transform: rotate(45deg);
+				}
+				&::after {
+					bottom: 19px;
+					transform: rotate(-45deg);
+				}
+				span {
+					display: none;
+					position: absolute;
+					width: 25%;
+					height: 2px;
+					background-color: #ffffff;
+					left: 11px;
+					top: 19px;
+				}
+			}
+			.menu__logo {
+				display: block;
+				margin-right: auto;
+			}
+			.search {
+				display: block;
+				position: relative;
+				@extend %icon;
+				img {
+					position: absolute;
+					top: 25%;
+					left: 30%;
+				}
+				&:hover {
+					@extend %transition;
+				}
+			}
+		}
+		.menu__list {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: auto;
+			.menu__item {
+				display: block;
+				position: relative;
+				font-family: TT Lakes;
+				font-size: $titles-fz;
+				line-height: 24px;
+				letter-spacing: -0.20000000298023224px;
+				text-align: left;
+				color: $text-color;
+				margin-bottom: 32px;
+				&:hover {
+					color: $title-text-color;
+				}
+				&:hover::before {
+					content: "";
+					position: absolute;
+					height: 32px;
+					width: 4px;
+					background-color: $hl-color;
+					bottom: -5px;
+					left: -24px;
+					border-top-right-radius: 6px;
+					border-bottom-right-radius: 6px;
+				}
+			}
+		}
+		.menu__contact {
+			.menu__widget {
+				display: flex;
+				justify-content: flex-start;
+				gap: 16px;
+				margin-bottom: 16px;
+				.call {
+					display: block;
+					position: relative;
+					@extend %icon;
+					img {
+						position: absolute;
+						top: 25%;
+						left: 25%;
+					}
+					&:hover {
+						@extend %transition;
+					}
+				}
+				.message {
+					display: block;
+					position: relative;
+					@extend %icon;
+					img {
+						position: absolute;
+						top: 25%;
+						left: 25%;
+						width: 20px;
+						height: 20px;
+					}
+					&:hover {
+						@extend %transition;
+					}
+				}
+				.profile {
+					display: block;
+					position: relative;
+					@extend %icon;
+					margin-right: 20px;
+					img {
+						position: absolute;
+						top: 25%;
+						left: 25%;
+						width: 20px;
+						height: 20px;
+					}
+					&:hover {
+						@extend %transition;
+					}
+				}
+			}
+			.menu__mail {
+				display: block;
+				font-family: TT Lakes;
+				font-size: $titles-fz;
+				line-height: 24px;
+				letter-spacing: -0.20000000298023224px;
+				text-align: left;
+				color: $text-color;
+				margin-bottom: 12px;
+				width: fit-content;
+				&:hover {
+					@extend %transition;
+				}
+			}
+			.menu__number {
+				display: block;
+				font-family: TT Lakes;
+				font-size: 24px;
+				line-height: 32px;
+				letter-spacing: -0.6000000238418579px;
+				text-align: left;
+				color: $text-color;
+				font-weight: bold;
+				margin-bottom: 40px;
+				width: fit-content;
+				&:hover {
+					@extend %transition;
+				}
+			}
+		}
+		
+		.menu__language {
+			margin-bottom: 32px;
+			display: flex;
+			justify-content: flex-start;
+			gap: 7px;
+			.language {
+				background-color: transparent;
+				text-transform: uppercase;
+				color: $text-color;
+				&:hover {
+					color: $title-text-color;
+				}
+			}
+		}
+	}
+	.menu__overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+	}
+}
+.menu__opened {
+	left: 0;
+	.menu__overlay {
+		display: block;
+		background-color: $block-bg;
+		opacity: 0.96;
+		z-index: -2;
+	}
+	.menu__container{
+		box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+	}
+}

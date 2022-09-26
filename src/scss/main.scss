@@ -1,0 +1,18 @@
+@import "variables.scss";
+@import "normalize.scss";
+@import "header.scss";
+@import "menu.scss";
+@import "brands.scss";
+@import "tech-types.scss";
+@import "price.scss";
+@import "footer.scss";
+@import "modal-message.scss";
+@import "modal-call.scss";
+@import "media768px.scss";
+@import "media1366px.scss";
+@import "../fonts/font.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
+
+.wrapper {
+	position: relative;
+}
